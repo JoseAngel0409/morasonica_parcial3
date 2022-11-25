@@ -12,7 +12,7 @@
     <?php include 'menu.php'; ?>
     <br>
     <div class="container">
-        <div class="row">
+        <div class="row"><br><br>
             <div class="col-12">
                 <div class="jumbotron">
                     <h1 class="display-4">Automoviles </h1>
