@@ -2,12 +2,12 @@
 
     include 'conexion.php';
 
-    $id = $_GET["id"];
+    $idproducto = $_GET["idproducto"];
 
-    $sql = "DELETE FROM automovil WHERE id=" . $id;
+    $sql = "DELETE FROM biblioteca WHERE idproducto=" . $idproducto;
 
     if($conexion->query($sql) === TRUE){
-        echo "Se eliminó el registro con ID " .$id. "<br>";
+        echo "Se eliminó el registro con ID " .$idproducto. "<br>";
         echo "<a href='consultarDatos.php'>Regresar</a>";
     } else {
         echo "Ocurrió un error: " . $conexion->error ."<br>";

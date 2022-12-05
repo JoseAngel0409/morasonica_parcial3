@@ -11,13 +11,13 @@
 <body style="background-color: #c68642">
   
     <?php
-      include 'conexion.php';
-      $sql = "select * from automovil";
+      include 'conexion.php' ;
+      include 'menu.php' ;
+      $sql = "select * from biblioteca";
       $datos = $conexion->query($sql);
 
     ?>
 
-    <?php include 'menu.php'; ?>
     <br>
     <div class="container">
         <div class="row">
@@ -25,22 +25,21 @@
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <th>Producto<br>
-                            imagen
-
-                            </th>
-                           
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Descripción</th>
                         </tr>
                     </thead>
                     <tbody>
-                      <?php if($datos->num_rows > 0) { 
+                      <?php if($datos->num_rows > 3) { 
                           while($row = $datos->fetch_assoc()) {
                       ?>
                         <tr>
-                            <td><?php echo $row["id"]; ?></td>
-
-                            <td>
-                                <a href="actualizarRegistro.php?id=<?php echo $row["id"]; ?>" class="btn btn-primary">Comprar</a>
+                            <td><?php echo $row["idproducto"]; ?></td>
+                            <td><?php echo $row["precio"]; ?></td>
+                            <td><?php echo $row["descripcion"]; ?></td>
+                            <td><br>
+                                <a href="comprar.php?id=<?php echo $row["id"]; ?>" class="btn btn-dark">Comprar</a><br>
                                 <a href="eliminarRegistro.php?id=<?php echo $row["id"]; ?>" class="btn btn-danger">Eliminar</a>
                             </td>
                         </tr>
@@ -54,11 +53,11 @@
             </div>
         </div>
     </div>
-
-
-
+    <footer class="text-center">
         <hr>
         2022 &copy; Cetis107 Desarrollo Web
+    </footer>
     <script src="js/bootstrap.js"></script>
 </body>
 </html>
+

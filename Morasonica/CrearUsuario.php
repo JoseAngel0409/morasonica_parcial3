@@ -34,7 +34,7 @@
                 <input name="contrasena" type="password" class="form-control" placeholder="Contraseña" required>
             </div>
             <br>
-            <button type="submit" class="btn btn-outline-light">Crear usuario</button>
+            <a href="IniciarSesion.php"><button type="submit" class="btn btn-outline-light">  Iniciar sesión  </button><br><br>
             <br>
         </form>
     </div> 

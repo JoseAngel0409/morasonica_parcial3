@@ -1,12 +1,12 @@
 <?php
 
-    NuevoUsuario($_POST['correo'],$_POST['nombre'],$_POST['password']);
+    NuevoUsuario($_POST['correo'],$_POST['nombre'],$_POST['contrasena']);
 
-    function NuevoUsuario($correo, $usuario, $password){
+    function NuevoUsuario($correo, $usuario, $contrasena){
         include 'conexion.php';
 
         $sentencia="INSERT INTO iniciar (correo, usuario, password) 
-        VALUES('".$correo."','".$usuario."','".$password."')   ";
+        VALUES('".$correo."','".$usuario."','".$contrasena."')   ";
 
         $conexion->query($sentencia);
 

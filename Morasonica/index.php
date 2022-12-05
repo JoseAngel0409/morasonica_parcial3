@@ -8,51 +8,92 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/jquery-3.6.1.js"></script>
 </head>
-<body>
-    <?php include 'menu.php'; ?>
+<body style="background-color: #c68642">
+    <?php include 'menu.php' ?>
     <br>
-    <div class="container">
-        <div class="row"><br><br>
-            <div class="col-12">
-                <div class="jumbotron">
-                    <h1 class="display-4">Automoviles </h1>
-                    <p class="lead">
-                    Aqui podras encontrar datos de autos o registrar tu auto y tambien poder hacer tu tarjeta de circulacion sin problema.<br>
-                        <ul class="list-group">
-                        <li class="list-group-item list-group-item-light" aria-current="true">Y esta pagina te lo ofrece:</li>
-                        <li class="list-group-item list-group-item-success">Rapido</li>
-                        <li class="list-group-item list-group-item-success">Facil</li> 
-                        <li class="list-group-item list-group-item-success">Seguro</li>
-                        <li class="list-group-item list-group-item-success">Gratis</li>
-                        <li class="list-group-item list-group-item-danger">Sin riesgo</li><br><br>
-                        <div class="progress">
-  <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 20%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Usuarios que tienen miedo de ganar </div>
-</div>
-<div class="progress">
-  <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Usuarios que confían en nosotros</div>
-</div>
-                    </ul>
-                        
-                    </p>
-                    <hr class="my-4">
-                    <h2> Integrantes</h2><br>
-                    <p>Jesus Omar Rodriguez Torres</p>
-                    <img src="suru.jpeg" width="390" height="240">              
-                    <p>Jose Angel Guerreo Inzunza</p>
-                    <img src="ñeca.jpg" width="590" height="220">  
-                    <p>Francisco Alonzo López Murguia</p>
-                    <img src="ñeca.jpg" width="590" height="220">                  
-                
-
-
-                  </div>
-            </div>
-        </div>
+<div class="card-deck">
+  <div class="card">
+    <img src="silla.jpeg" class="card-img-top" alt="..." width="100" height="350">
+    <div class="card-body">
+      <h5 class="card-title">Silla gamer</h5>
+      <p class="card-text">Silla de Escritorio Tedge 435882 Gamer Ergonomica Negra y RGB Con Tapizada de Cuero Sintetico.</p>
+      <b class="card-text">$2,425</b>
+         <b class="card-text" style="color:lime">45% OFF</b>
+        <b class="card-text" style="color:lime">Envío gratis</b>
     </div>
-    <footer class="text-center">
+    <div class="card-footer">
+    <a href="sillagamer.php" class="btn btn-dark">Comprar</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="xiaomi.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Xiaomi</h5>
+      <p class="card-text">Xiaomi Redmi Note 10S Dual SIM 128GB Negro 6 GB RAM.</p>
+      <b class="card-text">$7,699</b>
+         <b class="card-text" style="color:lime">15% OFF</b>
+    </div>
+    <div class="card-footer">
+    <a href="xiaomi.php" class="btn btn-dark">Comprar</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="iphone.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Iphone</h5>
+      <p class="card-text">Iphone 11 Pro 256 GB Rojo.</p>
+      <b class="card-text">$11,425</b>
+         <b class="card-text" style="color:lime">69% OFF</b>
+         <b class="card-text" style="color:lime">Envío gratis</b>
+    </div>
+    <div class="card-footer">
+    <a href="iphone.php" class="btn btn-dark">Comprar</a>
+    </div>
+  </div>
+</div>
+<br>
+<div class="card-deck">
+  <div class="card">
+    <img src="colchon.jpeg" class="card-img-top" alt="..." >
+    <div class="card-body">
+      <h5 class="card-title">Colchon</h5>
+      <p class="card-text">Colchon Matrimonial Ortopedico + 2 Almohadas Spring Air.</p>
+      <b class="card-text">$4,425</b>
+         <b class="card-text" style="color:lime">25% OFF</b>
+         <b class="card-text" style="color:lime">Envío gratis</b>
+    </div>
+    <div class="card-footer">
+    <a href="colchon.php" class="btn btn-dark">Comprar</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="rascador.jpeg" class="card-img-top" alt="..." width="100" height="350">
+    <div class="card-body">
+      <h5 class="card-title">Rascador</h5>
+      <p class="card-text">Rascador Poste con Juguete Desmontable Para Gatos, 63cm.</p>
+      <b class="card-text">$6,425</b>
+         <b class="card-text" style="color:lime">45% OFF</b>
+    </div>
+    <div class="card-footer">
+    <a href="rascador.php" class="btn btn-dark">Comprar</a>
+    </div>
+  </div>
+  <div class="card">
+    <img src="mochila.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Mochila para gatos</h5>
+      <p class="card-text">Mochila Back Pack Transportadora de Gatos y Perros.</p>
+      <b class="card-text">$3,575</b>
+         <b class="card-text" style="color:lime">35% OFF</b>
+    </div>
+    <div class="card-footer">
+    <a href="mochila.php" class="btn btn-dark">Comprar</a>
+    </div>
+  </div>
+</div>
+
         <hr>
         2022 &copy; Cetis107 Desarrollo Web
-    </footer>
     <script src="js/bootstrap.js"></script>
 </body>
 </html>

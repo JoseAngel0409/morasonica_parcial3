@@ -14,7 +14,7 @@
 <div class="card text-center" style="width: 920px; margin: auto; width: 35rem; background-color:#c68642">
 <div class="border">
 <div class="text-center"><br>
-    <img src="mora.jpg" class="rounded-circle" width="220"  alt="..." vertical-align="middle">
+    <img src="mora.jpg" class="rounded-circle" width="250"  alt="..." vertical-align="middle">
 </div>
 <h4>Morasonica</h4>
     <div class="card-body" >

@@ -5,9 +5,9 @@
 
 	function ConsultarUsuario($usuario, $password)
 	{
-		include 'conexionConBD.php';
-		$sentencia= "SELECT * FROM usuarios 
-        WHERE usuario='".$usuario."' AND password='".$password."' OR  correo='".$usuario."' AND password='".$password."'";
+		include 'conexion.php';
+		$sentencia= "SELECT * FROM iniciar 
+        WHERE iniciar='".$usuario."' AND password='".$password."' OR  correo='".$usuario."' AND password='".$password."'";
 		$resultado=$conexion->query($sentencia);
 
 		$count = mysqli_num_rows($resultado); //Numero de filas del resultado de la consulta

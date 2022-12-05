@@ -24,35 +24,27 @@
         <div class="alert alert-danger">No existen registros con ese término de búsqueda</div><br><br>
         <a href="consultarDatos.php">Regresar</a>
     <?php } else { 
-        $sql = "SELECT * from automovil WHERE id LIKE '%" . $_GET["termino"] . "%'";
-        $id= $conexion->query($sql);
+        $sql = "SELECT * from producto WHERE idproducto LIKE '%" . $_GET["termino"] . "%'";
+        $idproducto= $conexion->query($sql);
         if($id->num_rows == 0) {
             echo "<br><div class='alert alert-danger'>No existen registros con ese término de búsqueda</div><br><br>";
         } else {
     ?>
         <table class="table table-hover">
             <thead>
-                <th>ID</th>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Placas</th>
-                <th>Color</th>
-                <th>Tarjeta de circulación</th>
-                <th>Propietario</th>
+                <th>producto</th>
+                <th>Precio</th>
+                <th>Descripción</th>
             </thead>
             <tbody>
                 <?php while($row = $id->fetch_assoc()) { ?>
                     <tr>
-                        <td><?php echo $row["id"]; ?></td>
-                        <td><?php echo $row["marca"]; ?></td>
-                        <td><?php echo $row["modelo"]; ?></td>
-                        <td><?php echo $row["placas"]; ?></td>
-                        <td><?php echo $row["color"]; ?></td>
-                        <td><?php echo $row["tarjeta"]; ?></td>
-                        <td><?php echo $row["propietario"]; ?></td>
-                        <td>
-                            <a href="actualizarRegistro.php?id=<?php echo $row["id"]; ?>" class="btn btn-primary">Editar</a>
-                            <a href="eliminarRegistro_Auto.php?id=<?php echo $row["id"]; ?>" class="btn btn-danger">Eliminar</a>
+                        <td><?php echo $row["idproducto"]; ?></td>
+                        <td><?php echo $row["precio"]; ?></td>
+                        <td><?php echo $row["descripcion"]; ?></td>
+                        <td><br>
+                            <a href="comprar.php?id=<?php echo $row["idproducto"]; ?>" class="btn btn-primary">Comprar</a><br>
+                            <a href="eliminarRegistro_Auto.php?id=<?php echo $row["idproducto"]; ?>" class="btn btn-danger">Eliminar</a>
                         </td>
                     </tr>
                 <?php } ?>
