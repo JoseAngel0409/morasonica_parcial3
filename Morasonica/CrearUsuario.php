@@ -31,10 +31,10 @@
             <br>
             <h5>Contraseña</h5>
             <div class="form-row">
-                <input name="contrasena" type="password" class="form-control" placeholder="Contraseña" required>
+                <input name="password" type="password" class="form-control" placeholder="Contraseña" required>
             </div>
             <br>
-            <a href="IniciarSesion.php"><button type="submit" class="btn btn-outline-light">  Iniciar sesión  </button><br><br>
+            <a href="IniciarSesion.php"><button type="submit" class="btn btn-outline-light">  Crear sesión  </button><br><br>
             <br>
         </form>
     </div> 

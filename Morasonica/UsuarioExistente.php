@@ -1,8 +1,8 @@
 <?php
 
-    NuevoUsuario($_POST['correo'],$_POST['nombre'],$_POST['password']);
+    Nuevo($_POST['correo'],$_POST['usuario'],$_POST['password']);
 
-    function NuevoUsuario($correo, $usuario, $password){
+    function Nuevo($correo, $usuario, $password){
         include 'conexion.php';
 
         $sentencia="INSERT INTO iniciar (correo, usuario, password) 
@@ -10,7 +10,4 @@
 
         $conexion->query($sentencia);
 
-        echo '<script>';
-            echo 'window.location.href="entro/index.php";';
-        echo '</script>';
     }
